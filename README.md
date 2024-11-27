@@ -81,15 +81,3 @@ After configuring Firebase, run the app in development mode:
 npm start
 ```
 The app should now be running at http://localhost:3000 in your browser.
-
-Contributing
-If you'd like to contribute to this project:
-
-Fork the repository.
-Create a new branch (git checkout -b feature-branch).
-Commit your changes (git commit -m 'Add new feature').
-Push to the branch (git push origin feature-branch).
-Open a pull request.
-
-License
-This project is open source and available under the MIT License.
