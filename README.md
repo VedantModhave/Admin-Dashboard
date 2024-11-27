@@ -35,12 +35,12 @@ First, clone this repository to your local machine:
 ```bash
 git clone https://github.com/VedantModhave/<repository-name>.git
 cd <repository-name>
-2. Install Dependencies
+```
+### 2. Install Dependencies
 Install the required dependencies using npm:
-
-bash
-Copy code
+```bash
 npm install
+```
 3. Set Up Firebase
 To connect the app with Firebase:
 
@@ -49,8 +49,8 @@ Create a new Firebase project (or use an existing one).
 Enable Firebase Authentication (email/password or other methods as required).
 Set up Firebase Firestore and create a collection for user profiles.
 Obtain the Firebase config details from the Firebase console and replace them in the firebase.js file.
-javascript
-Copy code
+
+```
 // firebase.js
 
 import firebase from 'firebase/app';
@@ -73,64 +73,15 @@ const auth = firebaseApp.auth();
 const db = firebaseApp.firestore();
 
 export { auth, db };
+```
+
 4. Run the Development Server
 After configuring Firebase, run the app in development mode:
-
-bash
-Copy code
+```
 npm start
+```
 The app should now be running at http://localhost:3000 in your browser.
 
-Deployment
-Deploy to Firebase Hosting
-To deploy the app to Firebase Hosting:
-
-Install Firebase CLI if you haven't already:
-bash
-Copy code
-npm install -g firebase-tools
-Log in to Firebase:
-bash
-Copy code
-firebase login
-Initialize Firebase in your project:
-bash
-Copy code
-firebase init
-Choose Firebase Hosting and Firebase Firestore during initialization.
-Select your Firebase project.
-Set build/ as the public directory (for React projects).
-Configure it as a single-page app by choosing "Yes" for "Configure as a single-page app (rewrite all URLs to /index.html)?".
-Build the React app:
-bash
-Copy code
-npm run build
-Deploy the app:
-bash
-Copy code
-firebase deploy
-After deploying, you'll receive a URL where your app is hosted live.
-
-File Structure
-plaintext
-Copy code
-├── public/
-│   ├── index.html
-│   └── ...
-├── src/
-│   ├── components/
-│   ├── firebase.js
-│   ├── App.js
-│   └── ...
-├── .gitignore
-├── package.json
-├── README.md
-└── ...
-Troubleshooting
-Issue: Firebase Authentication Errors
-Ensure that the email/password sign-in method (or other authentication method) is enabled in the Firebase console under the Authentication section.
-Issue: Firebase Firestore Errors
-Make sure you've set the appropriate Firestore rules in Firebase Console for read/write access to your Firestore database.
 Contributing
 If you'd like to contribute to this project:
 
@@ -139,5 +90,6 @@ Create a new branch (git checkout -b feature-branch).
 Commit your changes (git commit -m 'Add new feature').
 Push to the branch (git push origin feature-branch).
 Open a pull request.
+
 License
 This project is open source and available under the MIT License.
