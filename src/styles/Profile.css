@@ -1,0 +1,124 @@
+/* General Profile Styles */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .profile-header {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .profile-pic-container {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  
+  .profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .profile-info p {
+    font-size: 1.1rem;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  /* Form styling */
+  .profile-form {
+    width: 100%;
+    max-width: 600px;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-form input,
+  .profile-form select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  
+  .profile-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .profile-form button:hover {
+    background-color: #45a049;
+  }
+  
+  /* For responsiveness */
+  @media (max-width: 768px) {
+    .profile-container {
+      padding: 15px;
+    }
+  
+    .profile-header {
+      font-size: 2rem;
+    }
+  
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .profile-info p {
+      font-size: 1rem;
+    }
+  
+    .profile-form {
+      width: 100%;
+      padding: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .profile-header {
+      font-size: 1.5rem;
+    }
+  
+    .profile-pic {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .profile-form input,
+    .profile-form select {
+      font-size: 0.9rem;
+    }
+  
+    .profile-form button {
+      font-size: 0.9rem;
+    }
+  }
+  
